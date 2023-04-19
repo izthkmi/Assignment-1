@@ -48,9 +48,9 @@ close(pipefds[0]);
 write(pipefds[1], qty, QTY_LENGTH + 1);
 
 
-printf("Please enter your car brand:\n");
+printf("Please enter your course name:\n");
 fgets(string, 100, stdin);
-printf("This is your car brand : %s", string);
+printf("This is your course name: %s", string);
 printf("Generating Quantity in parent and sending to child...\n");
 
 sleep(QTY_WAIT_INTERVAL);
